@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "pages#home" # creates root_path
   get "about" => "pages#about" # creates about_path
-  get "best" => "pages#best"
+ 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
